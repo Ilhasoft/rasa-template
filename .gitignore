@@ -1,2 +1,7 @@
 env/
 models/
+
+# Evaluate
+confmat.png
+hist.png
+errors.json

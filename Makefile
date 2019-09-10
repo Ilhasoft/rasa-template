@@ -7,4 +7,4 @@ evaluate:
 	python -m rasa_nlu.evaluate --data nlu_test.md --model models/current/nlu/
 
 clean:
-	rm -rf models
+	rm -rf models confmat.png hist.png errors.json
