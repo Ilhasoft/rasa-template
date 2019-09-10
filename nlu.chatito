@@ -1,21 +1,123 @@
-%[greeting]
-    bom dia
+// Greeting -------------------------------------------------------------------
+
+%[greeting]('training': '300', 'distribution': 'even')
+    ~[tudo_bem]
+    ~[bom_dia]
+    ~[como_vai]
+    ~[ola]
+
+~[tudo_bem]
+    tudo bem
+    tudo bom
+    tudo certinho
+    tudo ok
+    tudo okay
+    tudo okey
+
+~[bom_dia]
+    bela manhã
+    bela noite
+    boa noite
     boa tarde
+    bom dia
+    buenas noches
+    buenos días
+    buenas tardes
+
+~[como_vai]
     como está
     como vai
+    qué tál
+
+~[ola]
+    hello
+    hi
+    oi
+    oie
+    oiê
     olá
-    tudo bem
+    opa
 
-%[lookup]
-    gostaria de encontrar locais para comer
-    gostaria de achar restaurantes próximos
-    mostre lanchonetes próximas
-    mostre os restaurantes nas redondezas
-    mostre os restaurantes próximos
-    onde posso achar restaurantes
+// Lookup ---------------------------------------------------------------------
 
-%[goodbye]
+%[lookup]('training': '200', 'distribution': 'even')
+    ~[gostaria_de] ~[encontrar] ~[locais_para_comer] ~[proximos?]
+    ~[mostre] ~[locais_para_comer] ~[proximos?]
+
+~[gostaria_de]
+    como posso
+    como que eu faço para
+    desejo
+    de que forma posso
+    gostaria de
+    onde posso
+    poderia me contar como posso
+    poderia me dizer como posso
+    quero
+
+~[mostre]
+    conte sobre
+    conte-me sobre
+    fale sobre
+    liste
+    mostre
+    poderia listar
+    poderia me mostrar
+    por favor, mostre
+
+~[encontrar]
+    achar
+    descobrir
+    encontrar
+    listar
+    localizar
+    ver
+
+~[locais_para_comer]
+    bares
+    botecos
+    cafés
+    lanchonetes
+    locais para comer
+    mercadinhos
+    praças de alimentação
+    restaurantes
+    supermercados
+    tabernas
+    tavernas
+    vendas
+    vendinhas
+
+~[proximos]
+    não muito distantes
+    nas redondezas
+    nesse bairo
+    neste bairro
+    pertinho
+    perto
+    por aqui
+    por aqui por perto
+    por perto
+    próximas
+    próximos
+    que estejam perto
+    que não estejam longe
+    que sejam pertinho
+    que sejam perto
+
+// Goodbye --------------------------------------------------------------------
+
+%[goodbye]('training': '300', 'distribution': 'even')
+    ~[tchau] ~[feliz?]
+
+~[tchau]
     adeus
+    adiós
     até logo
     até mais
+    bye
+    bye bye
+    ciao
+    falou
+    flw
     tchau
