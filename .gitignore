@@ -1,7 +1,12 @@
+# Python and Rasa
 env/
 models/
-
-# Evaluate
 confmat.png
 hist.png
 errors.json
+
+# Node and Chatito
+node_modules/
+package-lock.json
+rasa_dataset_training.json
+rasa_dataset_testing.json

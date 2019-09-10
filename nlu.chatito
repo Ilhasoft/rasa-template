@@ -1,0 +1,21 @@
+%[greeting]
+    bom dia
+    boa tarde
+    como está
+    como vai
+    olá
+    tudo bem
+
+%[lookup]
+    gostaria de encontrar locais para comer
+    gostaria de achar restaurantes próximos
+    mostre lanchonetes próximas
+    mostre os restaurantes nas redondezas
+    mostre os restaurantes próximos
+    onde posso achar restaurantes
+
+%[goodbye]
+    adeus
+    até logo
+    até mais
+    tchau

@@ -1,0 +1,20 @@
+{
+  "name": "bothub-chatito-template",
+  "version": "1.0.0",
+  "description": "Experiments with chatito capabilities",
+  "main": "index.js",
+  "dependencies": {
+    "chatito": "^2.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/ilhasoft/bothub-chatito-template.git"
+  },
+  "author": "Dielson Sales",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/ilhasoft/bothub-chatito-template#readme"
+}
