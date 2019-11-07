@@ -4,9 +4,19 @@ models/
 confmat.png
 hist.png
 errors.json
+results/
 
 # Node and Chatito
 node_modules/
 package-lock.json
 rasa_dataset_training.json
 rasa_dataset_testing.json
+
+# Mac
+*.DS_Store
+
+# Editors
+.vscode/
+
+# Cache
+__pycache__
