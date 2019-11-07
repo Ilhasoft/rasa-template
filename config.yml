@@ -1,8 +1,9 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
 language: pt_br
 
 pipeline:
-
-- name: "nlp_spacy"
+- name: "SpacyNLP"
 - name: "WhitespaceTokenizer"
 - name: "CountVectorsFeaturizer"
 - name: "EmbeddingIntentClassifier"
@@ -12,3 +13,10 @@ pipeline:
   similarity_type: cosine
   # random_seed: 0
 - name: "CRFEntityExtractor"
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: MemoizationPolicy
+  - name: KerasPolicy
+  - name: MappingPolicy
