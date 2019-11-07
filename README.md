@@ -13,12 +13,6 @@ source env/bin/activate;
 pip install -r requirements.txt
 ```
 
-Install the Chatito dependencies:
-
-```
-npm install
-```
-
 ### Activating the Python virtual environment
 
 whenever you go into the project folder, before you do anything you should activate the project's virtual environment by doing:
@@ -41,14 +35,12 @@ To train the model, simply run:
 make train
 ```
 
-This command will automatically use the chatito file to generate the Rasa inputs(`rasa_dataset_training.json` and `rasa_dataset_test.json`) and train the model using them.
-
 ## Testing the model with random phrases
 
 If you run the `main.py` file, you can type random phrases to see what the model outputs for them.
 
 ```
-python main.py
+rasa shell nlu
 ```
 
 ## Evaluating
@@ -59,7 +51,7 @@ You can write all the test phrases you want in the `nlu_test.md` file. After you
 make evaluate
 ```
 
-The evaluation command will show a few graphs in the screen and save them in the `hist.png`, `confmat.png` and `errors.json` (if there's any errors) that you can consult or save if you want.
+The evaluation command will save the graphs in the `hist.png`, `confmat.png` and `errors.json` (if there's any errors) that you can consult or save if you want.
 
 ## Cleaning temporary files
 
