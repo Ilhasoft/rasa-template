@@ -1,0 +1,14 @@
+language: pt_br
+
+pipeline:
+
+- name: "nlp_spacy"
+- name: "WhitespaceTokenizer"
+- name: "CountVectorsFeaturizer"
+- name: "EmbeddingIntentClassifier"
+  # analyze: char
+  # min_gram: 3
+  # max_gram: 3
+  similarity_type: cosine
+  # random_seed: 0
+- name: "CRFEntityExtractor"

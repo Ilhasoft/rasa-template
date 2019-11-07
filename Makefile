@@ -1,8 +1,7 @@
 LOG_FILE = out.log
 
 train:
-	npx chatito nlu.chatito --format=rasa;
-	python3 -m rasa_nlu.train -c nlu_config.yml --data rasa_dataset_training.json -o models --fixed_model_name nlu --project current --verbose;
+	rasa train nlu
 
 evaluate:
 	python3 -m rasa_nlu.evaluate --data nlu_test.md --model models/current/nlu/;
