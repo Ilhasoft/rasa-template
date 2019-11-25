@@ -3,13 +3,13 @@
 language: pt_br
 
 pipeline:
-- name: "SpacyNLP"
+# - name: "SpacyNLP"
 - name: "WhitespaceTokenizer"
 - name: "CountVectorsFeaturizer"
 - name: "EmbeddingIntentClassifier"
-  # analyze: char
-  # min_gram: 3
-  # max_gram: 3
+  analyze: char
+  min_gram: 3
+  max_gram: 3
   similarity_type: cosine
   # random_seed: 0
 - name: "CRFEntityExtractor"
